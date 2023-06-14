@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Login Form </title>
+ 
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="login">
+  <form>
+    <h1>Login</h1>
+    <div class="content">
+      <div class="input-field">
+	 
+       Username: <input type="text" name="Uname" id="Uname" placeholder="Username">
+       Email:<input type="email" placeholder="Email" name="email">
+       password:<input type="password" placeholder="password" name="pwd">
+      </div>
+      <a href="#" class="link">Forgot Your Password?</a>
+    </div>
+    <div class="action">
+     
+      <button onclick="welcome()" >Sign in</button>
+    </div>
+  </form>
+</div>
+ <script>
+        function welcome() 
+          {
+               var Uname = document.getElementById("Uname").value;
+               var Pass= document.getElementById("pwd").value;
+              if (Uname ===Pass){
+                   document.write("<h1>Welcome " + Uname +"!</h1>" );
+              }
+			  else {
+                   document.write("<h1>Username and Password are not same</h1>");
+               }
+           
+           }
+      </script> 
+
+</body>
+
+</html>
